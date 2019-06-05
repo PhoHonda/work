@@ -12,3 +12,5 @@
   } else {
       include("content/home.php");
   }
+
+//shane 
