@@ -1,0 +1,240 @@
+
+* {
+    box-sizing:  border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+ 
+}
+
+.container {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+ 
+}
+
+
+/* title */
+
+h1 { 
+    font-weight: 300;
+    font-size: 0 auto;
+    margin-top:  0;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5em;
+    font-weight: 900;
+    margin-top: 1em;
+}
+
+.title span {
+    font-weight: 300;
+    display: block;
+    font-size: .9em;
+}
+
+@media (min-width:60rem ) {
+    .title {
+        font-size: 3.7rem;
+    }
+}
+
+/* button */
+
+.button {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: .5em 1.75em;
+}
+
+@media (min-width:60rem) {
+    .buton {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+.button-small {
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.button-accent {
+    color: #55d6aa;
+    border-color: #55d6aa;
+}
+
+.button-accent:hover, button-accent:focus {
+    background: #55d6aa;
+    color: #232323;
+}
+
+
+
+/* This for the header ok shane */
+
+header {
+   position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 1em;
+}
+
+
+#nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#nav li {
+    display: inline-block;
+    margin: 1em;
+    position: relative;
+    padding-top: 1em;
+    font-weight: 900;
+}
+
+#nav a {
+    font-size: 20;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: ..8rem;
+    padding: .5em;
+    color: black;
+}
+
+
+#nav a:hover, #nav a:focus {
+    color: #DDD;
+}
+
+#nav a::before {
+   content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+#nav a:hover::before {
+    width: 100%;
+}
+
+@media (min-width:60rem) {
+    .logo {
+        float:left
+    }
+    #nav {
+        float: right;
+    }
+}
+
+
+/* home-hero */
+
+.home-hero {
+    background-image: url(https://images.unsplash.com/photo-1526344966-89049886b28d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 10em;
+}
+
+
+@media (min-width:60rem) {
+    .home-hero {
+        height: 100vh;
+        padding: 35vh;
+    }
+}
+
+/* home-about-text */
+
+.home-about-textbox {
+    background-color: #55d6aa;
+    padding: 3em;
+    width: 100vw;
+    margin-left: 0;
+    outline: 2px solid pink;
+    outline-offset: -3em;
+    color: #232323;
+    position: relative;
+}
+
+.home-about-textbox h1 {
+    color: #55;
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #55d6aa;
+    padding: 0 .25em;
+}
+
+/* portfolio */
+
+.portfolio {
+    margin: 3em 0;
+}
+
+
+
+port-item {
+    margin-left: 0;
+    position: relative;
+}
+
+
+.port-description {
+    z-index: 100;
+    left: 0em;
+    right: 0em;
+    color: white;
+    background: rgba(0,0,0,.75);
+    padding-bottom: 1em;
+    padding: .5em;
+}
+
+.port-description p {
+    margin: 0;
+}
+
+.cta {
+   background: pink; 
+}
+
+
+footer {
+    width: 100%;
+    background-color: #55d6aa;
+    padding: 10px 0px;
+    
+}
+
+footer p {
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+footer img {
+    margin-left: 2em
+}

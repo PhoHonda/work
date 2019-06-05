@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    background: #222;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    width: 88%;
+    margin: 0 auto;
+}
+
+header {
+    background: #55d6aa;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 0.125em 0;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 4.375em;
+    padding-top: 2em;
+    position: relative;
+}
+
+
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.875em;
+}
+
+
+nav a:hover {
+    color: #000;
+    
+}
+
+nav a::before {
+   content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+
+.parallax {
+	background-image: url("../img/cherryblo.jpg");
+	height: 600px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+
+.parallaxtwo {
+	background-image: url("../img/cherryblo.jpg");
+	height: 600px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+.parallax h1 {
+    font-weight: 600;
+    font-size: 700%;
+    color: #55d6aa;
+    font-family: 'Karla', sans-serif;
+}
+
+.parallaxtwo h1 {
+    font-weight: 600;
+    font-size: 700%;
+    color: #55d6aa;
+    font-family: 'Karla', sans-serif;
+}
+
+
+.row3 {
+	display: flex;
+	justify-content: center;
+}
+
+.row3 > div {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 17%;
+	background-color: grey;
+	margin: 2vh;
+}
+
+.row3 > div > img {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	max-width: 100%;
+	min-width: 100%;
+}
+
+.row3 > div > h3,
+.row3 > div > p {
+	padding: 0 2vh;
+}
+
+.row3 > div > a > button {
+	display: block;
+	margin: 2vh auto;
+	padding: 1vh 2vh;
+	margin-top: 0;
+	color: white;
+	font-size: 1em;
+	border-radius: .25em;
+	border: none;
+}
+
+.row3 > div > a {
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    background-color: #55d6aa;
+    padding: 10px 0px;
+    
+}
+
+footer p {
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+footer img {
+    margin-left: 2em
+}

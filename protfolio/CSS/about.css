@@ -1,0 +1,478 @@
+body {
+    margin: 0;
+    background: #222;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    width: 88%;
+    margin: 0 auto;
+}
+
+#nav header {
+   position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 1em;
+}
+
+
+#nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#nav li {
+    display: inline-block;
+    margin: 1em;
+    position: relative;
+    padding-top: 1em;
+    font-weight: 900;
+}
+
+#nav a {
+    font-size: 20;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: ..8rem;
+    padding: .5em;
+    color: black;
+}
+
+
+#nav a:hover, #nav a:focus {
+    color: #DDD;
+}
+
+#nav a::before {
+   content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+#nav a:hover::before {
+    width: 100%;
+}
+
+#nav @media (min-width:60rem) {
+    .logo {
+        float:left
+    }
+    #nav {
+        float: right;
+    }
+}
+
+.parallax {
+	background-image: url(https://pix10.agoda.net/geo/city/5085/1_5085_02.jpg?s=1920x822);
+	height: 600px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+.parallax h1 {
+    font-weight: 600;
+    font-size: 700%;
+    color: #55d6aa;
+    font-family: 'Karla', sans-serif;
+}
+
+.parallax h2 {
+  font-weight: 600;
+    font-size: 200%;
+    color: #55d6aa;
+    font-family: 'Karla', sans-serif 
+}
+
+.row3 {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.row3 > div {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+	background-color: #55d6aa;
+	margin: 2vh;
+}
+
+.row3 > .box2 {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 10%;
+	background-color: #55d6aa;
+	margin: 2vh;
+}
+
+.row3 > div > img {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	max-width: 100%;
+	min-width: 100%;
+}
+
+.row3  > .box2 {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	max-width: 50%;
+	min-width: 50%;
+}
+
+.row3 > div > h3,
+.row3 > div > p {
+	padding: 0 2vh;
+}
+
+
+
+.row3 > div > a > .button {
+	display: block;
+	margin: 2vh auto;
+	padding: 1vh 2vh;
+	margin-top: 0;
+	color: white;
+	font-size: 1em;
+	border-radius: .25em;
+	border: none;
+}
+
+.row3 > div > a {
+    text-decoration: none;
+}
+
+.box2 {
+    flex: ;
+}
+
+
+/*KEY*/
+@keyframes slider{
+    
+    0% {
+        left: 0;
+    }  
+    
+    20% {
+        left: 0;
+    }
+    
+    25% {
+        left:  -100%;
+    }
+    
+    45% {
+        left: -100%;
+    }
+    
+    50% {
+        left: -200%;
+    }
+    
+    70% {
+        left: -200%;
+    }
+    
+    75% {
+        left: -300%;
+    }
+    
+    95% {
+        left: -300%;
+    }
+    
+    100% {
+        left: -300%;
+    }
+    
+  
+    
+}
+
+  #slider {
+        overflow: hidden;
+    }
+    
+    #slider figure img {
+        width: 10%;
+        float: left;
+
+    }
+    
+    #slider figure {
+        position: relative;
+        width: 1000%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 6s slider infinite;
+    }
+
+
+
+* {
+    box-sizing:  border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+ 
+}
+
+.container {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+ 
+}
+
+
+/* title */
+
+h1 { 
+    font-weight: 300;
+    font-size: 0 auto;
+    margin-top:  0;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5em;
+    font-weight: 900;
+    margin-top: 1em;
+}
+
+.title span {
+    font-weight: 300;
+    display: block;
+    font-size: .9em;
+}
+
+@media (min-width:60rem ) {
+    .title {
+        font-size: 3.7rem;
+    }
+}
+
+/* button */
+
+.button {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: .5em 1.75em;
+}
+
+@media (min-width:60rem) {
+    .buton {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+.button-small {
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.button-accent {
+    color: #55d6aa;
+    border-color: #55d6aa;
+}
+
+.button-accent:hover, button-accent:focus {
+    background: #55d6aa;
+    color: #232323;
+}
+
+
+
+/* This for the header ok shane */
+
+header {
+   position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 1em;
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 1em;
+    position: relative;
+    padding-top: 1em;
+    font-weight: 900;
+}
+
+nav a {
+    font-size: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: ..8rem;
+    padding: .5em;
+    color: black;
+}
+
+
+nav a:hover, nav a:focus {
+    color: #DDD;
+}
+
+nav a::before {
+   content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+@media (min-width:60rem) {
+    .logo {
+        float:left
+    }
+    nav {
+        float: right;
+    }
+}
+
+
+/* home-hero */
+
+.home-hero {
+    background-image: url(../img/cherryblo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 10em;
+}
+
+
+@media (min-width:60rem) {
+    .home-hero {
+        height: 100vh;
+        padding: 35vh;
+    }
+}
+
+/* home-about-text */
+
+.home-about-textbox {
+    background-color: #55d6aa;
+    padding: 3em;
+    width: 100vw;
+    margin-left: 0;
+    outline: 2px solid pink;
+    outline-offset: -3em;
+    color: #232323;
+    position: relative;
+}
+
+.home-about-textbox h1 {
+    color: #55;
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #55d6aa;
+    padding: 0 .25em;
+}
+
+/* portfolio */
+
+.portfolio {
+    margin: 3em 0;
+}
+
+
+
+port-item {
+    margin-left: 0;
+    position: relative;
+}
+
+
+.port-description {
+    z-index: 100;
+    left: 0em;
+    right: 0em;
+    color: white;
+    background: rgba(0,0,0,.75);
+    padding-bottom: 1em;
+    padding: .5em;
+}
+
+.port-description p {
+    margin: 0;
+}
+
+.cta {
+   background: pink; 
+}
+
+
+footer {
+    width: 100%;
+    background-color: #55d6aa;
+    padding: 10px 0px;
+    
+}
+
+footer p {
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+footer img {
+    margin-left: 2em
+}
+
+
